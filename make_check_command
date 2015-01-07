@@ -1,0 +1,1 @@
+python setup_base.py build_ext -f -i; python3 setup_base.py build_ext -f -i; py.test --verbose
