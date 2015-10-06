@@ -4,7 +4,7 @@
 #
 Name     : cffi
 Version  : 1.2.1
-Release  : 23
+Release  : 24
 URL      : https://pypi.python.org/packages/source/c/cffi/cffi-1.2.1.tar.gz
 Source0  : https://pypi.python.org/packages/source/c/cffi/cffi-1.2.1.tar.gz
 Summary  : Foreign Function Interface for Python calling C code.
