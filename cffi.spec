@@ -4,14 +4,14 @@
 #
 Name     : cffi
 Version  : 1.8.3
-Release  : 36a
+Release  : 37
 URL      : http://pypi.debian.net/cffi/cffi-1.8.3.tar.gz
 Source0  : http://pypi.debian.net/cffi/cffi-1.8.3.tar.gz
 Summary  : Foreign Function Interface for Python calling C code.
 Group    : Development/Tools
 License  : MIT
 Requires: cffi-python
-#BuildRequires : cffi
+BuildRequires : cffi
 BuildRequires : libffi-dev
 BuildRequires : pbr
 BuildRequires : pip
