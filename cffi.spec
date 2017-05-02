@@ -4,7 +4,7 @@
 #
 Name     : cffi
 Version  : 1.10.0
-Release  : 42
+Release  : 43
 URL      : http://pypi.debian.net/cffi/cffi-1.10.0.tar.gz
 Source0  : http://pypi.debian.net/cffi/cffi-1.10.0.tar.gz
 Summary  : Foreign Function Interface for Python calling C code.
