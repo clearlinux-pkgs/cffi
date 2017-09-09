@@ -4,12 +4,13 @@
 #
 Name     : cffi
 Version  : 1.10.0
-Release  : 43
+Release  : 44
 URL      : http://pypi.debian.net/cffi/cffi-1.10.0.tar.gz
 Source0  : http://pypi.debian.net/cffi/cffi-1.10.0.tar.gz
 Summary  : Foreign Function Interface for Python calling C code.
 Group    : Development/Tools
 License  : MIT
+Requires: cffi-legacypython
 Requires: cffi-python
 Requires: pycparser
 BuildRequires : cffi
@@ -23,11 +24,23 @@ BuildRequires : python3-dev
 BuildRequires : setuptools
 
 %description
-No detailed description available
+CFFI
+        ====
+        
+        Foreign Function Interface for Python calling C code.
+
+%package legacypython
+Summary: legacypython components for the cffi package.
+Group: Default
+
+%description legacypython
+legacypython components for the cffi package.
+
 
 %package python
 Summary: python components for the cffi package.
 Group: Default
+Requires: cffi-legacypython
 
 %description python
 python components for the cffi package.
@@ -37,13 +50,16 @@ python components for the cffi package.
 %setup -q -n cffi-1.10.0
 
 %build
+export http_proxy=http://127.0.0.1:9/
+export https_proxy=http://127.0.0.1:9/
+export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1490105559
+export SOURCE_DATE_EPOCH=1504999948
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
 %install
-export SOURCE_DATE_EPOCH=1490105559
+export SOURCE_DATE_EPOCH=1504999948
 rm -rf %{buildroot}
 python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
 python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
@@ -54,7 +70,10 @@ echo ----[ mark ]----
 %files
 %defattr(-,root,root,-)
 
-%files python
+%files legacypython
 %defattr(-,root,root,-)
 /usr/lib/python2*/*
+
+%files python
+%defattr(-,root,root,-)
 /usr/lib/python3*/*
