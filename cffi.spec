@@ -4,7 +4,7 @@
 #
 Name     : cffi
 Version  : 1.11.0
-Release  : 47
+Release  : 48
 URL      : http://pypi.debian.net/cffi/cffi-1.11.0.tar.gz
 Source0  : http://pypi.debian.net/cffi/cffi-1.11.0.tar.gz
 Summary  : Foreign Function Interface for Python calling C code.
@@ -33,6 +33,7 @@ CFFI
 %package legacypython
 Summary: legacypython components for the cffi package.
 Group: Default
+Requires: python-core
 
 %description legacypython
 legacypython components for the cffi package.
@@ -51,6 +52,7 @@ python components for the cffi package.
 %package python3
 Summary: python3 components for the cffi package.
 Group: Default
+Requires: python3-core
 
 %description python3
 python3 components for the cffi package.
@@ -64,12 +66,12 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1506873293
+export SOURCE_DATE_EPOCH=1507151617
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
 %install
-export SOURCE_DATE_EPOCH=1506873293
+export SOURCE_DATE_EPOCH=1507151617
 rm -rf %{buildroot}
 python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
 python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
