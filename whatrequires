@@ -1,7 +1,9 @@
 # This file contains recursive sources that require this package
+acme
 bash_kernel
 bcrypt
 ceph
+certbot
 cffi
 cryptography
 ecdsa
@@ -11,14 +13,17 @@ ipython
 ipython-sql
 jupyter
 jupyter-notebook-gist
+jupyter_client
 keyring
 ndg_httpsclient
 notebook
 paramiko
 pyOpenSSL
+pynacl
 pypy
 pyzmq
 requests
 secretstorage
 smart_open
+spyder
 urllib3
