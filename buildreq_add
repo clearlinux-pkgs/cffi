@@ -3,3 +3,4 @@
 cffi
 pycparser
 libffi-dev
+setuptools-legacypython
