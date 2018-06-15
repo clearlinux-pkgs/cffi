@@ -19,7 +19,7 @@ BuildRequires : pbr
 BuildRequires : pip
 BuildRequires : pkgconfig(libffi)
 BuildRequires : pycparser
-BuildRequires : python-dev
+
 BuildRequires : python3-dev
 BuildRequires : setuptools
 BuildRequires : setuptools-legacypython
