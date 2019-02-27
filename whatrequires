@@ -2,6 +2,7 @@
 Django
 PyNaCl
 acme
+argon2_cffi
 brotlipy
 certbot
 cffi
