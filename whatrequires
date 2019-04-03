@@ -7,6 +7,7 @@ brotlipy
 certbot
 cffi
 cryptography
+deprecated-cffi
 horovod
 paramiko
 pyOpenSSL

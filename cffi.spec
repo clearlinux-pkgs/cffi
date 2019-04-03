@@ -4,7 +4,7 @@
 #
 Name     : cffi
 Version  : 1.12.2
-Release  : 75
+Release  : 76
 URL      : https://files.pythonhosted.org/packages/64/7c/27367b38e6cc3e1f49f193deb761fe75cda9f95da37b67b422e62281fcac/cffi-1.12.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/64/7c/27367b38e6cc3e1f49f193deb761fe75cda9f95da37b67b422e62281fcac/cffi-1.12.2.tar.gz
 Summary  : Foreign Function Interface for Python calling C code.
@@ -63,7 +63,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1554306322
+export SOURCE_DATE_EPOCH=1554308564
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 
