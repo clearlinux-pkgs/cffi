@@ -8,6 +8,9 @@ certbot
 cffi
 cryptography
 deprecated-cffi
+deprecated-cryptography
+deprecated-pyOpenSSL
+deprecated-urllib3
 horovod
 paramiko
 pyOpenSSL
