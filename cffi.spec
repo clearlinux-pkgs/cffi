@@ -4,7 +4,7 @@
 #
 Name     : cffi
 Version  : 1.12.3
-Release  : 79
+Release  : 80
 URL      : https://files.pythonhosted.org/packages/93/1a/ab8c62b5838722f29f3daffcc8d4bd61844aa9b5f437341cc890ceee483b/cffi-1.12.3.tar.gz
 Source0  : https://files.pythonhosted.org/packages/93/1a/ab8c62b5838722f29f3daffcc8d4bd61844aa9b5f437341cc890ceee483b/cffi-1.12.3.tar.gz
 Summary  : Foreign Function Interface for Python calling C code.
@@ -19,15 +19,12 @@ BuildRequires : cffi
 BuildRequires : libffi-dev
 BuildRequires : pkgconfig(libffi)
 BuildRequires : pycparser
-BuildRequires : python-dev
-BuildRequires : setuptools-legacypython
 
 %description
 CFFI
-====
-Foreign Function Interface for Python calling C code.
-Please see the [Documentation](http://cffi.readthedocs.org/) or uncompiled
-in the doc/ subdirectory.
+        ====
+        
+        Foreign Function Interface for Python calling C code.
 
 %package license
 Summary: license components for the cffi package.
@@ -62,8 +59,13 @@ python3 components for the cffi package.
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
-export LANG=C
-export SOURCE_DATE_EPOCH=1555944192
+export LANG=C.UTF-8
+export SOURCE_DATE_EPOCH=1569348868
+export GCC_IGNORE_WERROR=1
+export CFLAGS="$CFLAGS -fno-lto "
+export FCFLAGS="$CFLAGS -fno-lto "
+export FFLAGS="$CFLAGS -fno-lto "
+export CXXFLAGS="$CXXFLAGS -fno-lto "
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 
