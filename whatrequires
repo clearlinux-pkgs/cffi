@@ -10,12 +10,8 @@ certbot
 cffi
 conda
 cryptography
-deprecated-cffi
-deprecated-cryptography
-deprecated-pyOpenSSL
-deprecated-urllib3
+docker-py
 horovod
-koji
 mercurial
 oslo.privsep
 paramiko
