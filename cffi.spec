@@ -4,7 +4,7 @@
 #
 Name     : cffi
 Version  : 1.14.0
-Release  : 87
+Release  : 88
 URL      : https://files.pythonhosted.org/packages/05/54/3324b0c46340c31b909fcec598696aaec7ddc8c18a63f2db352562d3354c/cffi-1.14.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/05/54/3324b0c46340c31b909fcec598696aaec7ddc8c18a63f2db352562d3354c/cffi-1.14.0.tar.gz
 Summary  : Foreign Function Interface for Python calling C code.
@@ -23,9 +23,14 @@ BuildRequires : pycparser
 %description
 CFFI
 ====
+
 Foreign Function Interface for Python calling C code.
-Please see the [Documentation](http://cffi.readthedocs.org/) or uncompiled
-in the doc/ subdirectory.
+Please see the `Documentation <http://cffi.readthedocs.org/>`_.
+
+Contact
+-------
+
+`Mailing list <https://groups.google.com/forum/#!forum/python-cffi>`_
 
 %package license
 Summary: license components for the cffi package.
@@ -48,6 +53,7 @@ python components for the cffi package.
 Summary: python3 components for the cffi package.
 Group: Default
 Requires: python3-core
+Provides: pypi(cffi)
 
 %description python3
 python3 components for the cffi package.
@@ -62,7 +68,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1581102586
+export SOURCE_DATE_EPOCH=1582906706
 # -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
