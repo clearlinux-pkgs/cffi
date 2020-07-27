@@ -1,18 +1,22 @@
 # This file contains recursive sources that require this package
+Cura
 Django
 PyNaCl
 acme
 argon2_cffi
-barbican
+azure-datalake-store
 bcrypt
 brotlipy
 certbot
 cffi
+cmarkgfm
 conda
 cryptography
 docker-py
+gevent
 horovod
 mercurial
+notmuch
 oslo.privsep
 paramiko
 persistent
