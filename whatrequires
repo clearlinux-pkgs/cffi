@@ -3,7 +3,7 @@ Cura
 Django
 PyNaCl
 acme
-argon2_cffi
+argon2-cffi
 azure-datalake-store
 bcrypt
 brotlipy
