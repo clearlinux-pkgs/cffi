@@ -15,15 +15,14 @@ cryptography
 docker-py
 gevent
 horovod
+lutris
 mercurial
 notmuch
-oslo.privsep
 paramiko
 persistent
 pyOpenSSL
-pysaml2
+pycares
 python-augeas
 python-zstandard
 pyzmq
 urllib3
-xattr
