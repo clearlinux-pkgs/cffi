@@ -4,7 +4,6 @@ Django
 PyNaCl
 acme
 argon2-cffi
-azure-datalake-store
 bcrypt
 brotlipy
 certbot
