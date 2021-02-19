@@ -4,7 +4,7 @@
 #
 Name     : cffi
 Version  : 1.14.5
-Release  : 98
+Release  : 99
 URL      : https://files.pythonhosted.org/packages/a8/20/025f59f929bbcaa579704f443a438135918484fffaacfaddba776b374563/cffi-1.14.5.tar.gz
 Source0  : https://files.pythonhosted.org/packages/a8/20/025f59f929bbcaa579704f443a438135918484fffaacfaddba776b374563/cffi-1.14.5.tar.gz
 Summary  : Foreign Function Interface for Python calling C code.
