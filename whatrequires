@@ -24,4 +24,5 @@ pycares
 python-augeas
 python-zstandard
 pyzmq
+setuptools-rust
 urllib3
