@@ -3,6 +3,7 @@ Cura
 Django
 PyNaCl
 acme
+ansible
 argon2-cffi
 bcrypt
 brotlipy
@@ -13,6 +14,7 @@ conda
 cryptography
 docker-py
 gevent
+hexchat
 horovod
 lutris
 mercurial
